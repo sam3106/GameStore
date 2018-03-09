@@ -1,0 +1,187 @@
+body{background: url("gamestoreBackground.jpg");}
+.cf:before,.cf:after {content: " ";display: table;}
+.cf:after {clear: both;}
+a{text-decoration:none;color:darkblue;}
+#img-wrapper img,#gameHeader li,.console-header li,.news-box-button{cursor: pointer;}
+/* Top Header Nav Bar*/
+#header-nav{width:50%;margin: 0 auto 2% auto; padding:0;}
+#header-nav ul{text-decoration:none;margin:0;padding:0;}
+#header-nav li{background-color:gold;display:table-cell;font-size: 1.1em;
+	float: left;border-left:.5px dotted white;padding:3% 3%; 
+	color: white;list-style: none;width: 10.9%;text-align: center;
+}
+#header-nav a{display: block;text-align: center;color: gray;text-decoration: none;}
+/*                               Systems Nav                                  */
+#systems-nav{width:50%; margin:0 auto 2% auto; overflow: hidden;}
+#systems-nav ul{text-decoration: none;margin:0;padding:0;overflow: hidden;display:inline;}
+#systems-nav li{width:18.6%;border-right:.5px solid white;background: grey;
+	            float: left; display: inline-block;text-align: center;padding: 1% 0%;}
+#systems-nav a{display:block; text-align: center;font-size:1.1em;
+	           text-decoration: none;color:gold;}
+#systems-nav:last-child{width: 20%;margin: 0 auto}
+/*                  Search Button                   */
+.search-box-wrapper{display: flex;font-size: 12.5px;width:25%;}
+.search-box-input{width:100%;margin-left:4px; padding: 5% 10%;
+	              border:.1em solid gold;font-size: inherit;
+}
+.search-box-button{font-size: inherit;border: 0;padding:0; 
+	              color: gold; font-weight: bold;background: currentColor;
+}
+/*                           Game Img                              */
+#newest-game{width: 50%;margin:0 auto;background: url("newGame.jpg");height: 60vh;
+             background-size: 100% 100%;position: relative;
+}
+.header-date{text-align: center;font-size:2.2em;color:gold;}
+#img-wrapper{position: absolute;bottom:-4px;}
+#img-wrapper img{max-height: 75px;}
+
+/*                              Game Header                                 */
+#gameHeader{width:50%; margin:2% auto 1% auto;border-bottom: 2px solid #802000;}
+.console-header{width:50%; margin:2% auto 1% auto;border-bottom: 2px solid #802000;}
+#gameHeader ul{display: inline;}
+.console-header ul {display: inline;}
+#gameHeader li{float: left;list-style:none;padding:1.5% 1%;width:15%;
+	          display:inline-block;border-right: .05px solid white;
+	          background:gold; text-align:center;font-size:1.1em;color: grey;
+}
+.console-header li{float: left;list-style:none;padding:1.5% 1%;width:15%;
+	          display:inline-block;border-right: .05px solid white;
+	          background:gold; text-align:center;font-size:1.1em;color: grey;
+}
+#gameHeader a{text-decoration: none;color:grey;font-size: 9px;}
+.console-header a{text-decoration: none;color:grey;font-size: 9px;}
+/*                              four item wrapper                                 */
+.four-item-wrapper{width:50%;margin:0 auto 1% auto;}
+.four-items{width:21%; margin-right:5.3%; float: left;background: palegoldenrod;}
+.four-items img{max-width: 100%;height: 140px;width:100%;}
+.game-items img{ max-width:220px; height:200px;}
+.four-items h4,.four-items h2,.four-items h6{margin:0;padding-left:4px;}
+.four-items h2{font-size: 1.2em;height: 60px;}
+.four-items h4{padding-bottom: 6px; font-size: .9em;}
+.four-items h6{border:.2px solid gold;padding:2% 0 0 .5%;
+	           background:grey;width:100%; font-size:1.1em;}
+.chart-box-wrapper{display: flex;}
+.chart-box-button {width: 70%;background: gold;font-size:13px;}
+
+
+/*                              Add Us                                      */
+#add-us-wrapper{width:50%;margin:3% auto 0 auto;}
+.add-us{width:50%;float: left;height:80px}
+.add-us{background: gold;}
+.add-us h2, .add-us p{font-size: 1.3em;display: inline-block;margin:0;}
+.add-us a{float:right;border: 1px solid white;padding:4px; margin-bottom:9px;
+	     display:inline-block;font-size:1em;
+ }
+
+/*                             News/Email                                       */
+#news-wrapper{width:50%;margin:0 auto 20px auto;}
+#news-wrapper h3,#news-wrapper p{margin:0; font-size: 1.3em;}
+.news{float:left;width:50%;background:#802000;padding-top: 4px;height:50px;}
+.news input{width:65%;font-size: 1em;float: left;}
+.news-box-button{font-size:1em;float: left;color:white;background:#802000}
+#email{margin-top:1%;}
+
+/*                              End-Info                                     */
+#end-info-wrapper{width: 50%; margin: 0 auto 30px auto;background:palegoldenrod;}
+.end-info{width: 24.8%;float: left;border-right:.5px solid white;}
+.end-info h6{font-size: 1.3em; margin-left:5px;}
+.end-info p{font-size:1em;padding-left: 8px}
+.end-info a{text-decoration: none;color: darkblue}
+/*                              pseudo classes                                 */
+#header-nav li:hover:not(:first-child){background: #802000;}/*#header-nav hover */
+#header-nav li:first-child{background: black; width: 26%;border:none;}
+#header-nav li:last-child{border-right:0;border-left:.5 dotted white;}
+#systems-nav li:hover{background: #802000;}
+#gameHeader li:last-child{float: right;background:green;border: none;}   /* see more   */   
+.console-header li:last-child{float: right;background:green;border: none;} 
+.four-items:last-child{margin:0;}                       
+#gameHeader li:hover{background: #802000;}
+.console-header li:hover{background: #802000;}
+#add-us-wrapper div:nth-child(2){background-color: grey;}
+
+
+/*                              Media Query                                  */
+@media screen and (max-width: 1200px) {
+#systems-nav a{font-size: 1em;}
+.search-box-input{padding: 4.6% 0;}
+
+.console-header li{font-size: .9em;}
+.game-items img{height: 140px;}
+.four-items h2{height: 60px;font-size:1.1em;}
+.four-items h6{font-size:1em;}
+.four-items img{height:125px;}
+.add-us h2, .add-us p{font-size: .9em;}
+.add-us a{padding:2px;}
+#gameHeader li:last-child{padding:1.5% 0; font-size:.9em;}
+#gameHeader li{padding:1.5% 0;font-size:.9em;}
+.console-header li:last-child{padding:1.5% 0; font-size:.9em;}
+.console-header li{padding:1.5% 0;font-size:.9em;}
+}
+
+
+@media screen and (max-width: 987px) {
+#header-nav li{font-size: .6em;}
+#header-nav li:first-child{font-size:.6em;}
+.search-box-wrapper{display: none;}
+#systems-nav li{width: 24.7%;}
+#systems-nav a{font-size: .5em;}
+.four-items h2{font-size:.9em;}
+.four-items h4{font-size: .7em;}
+.four-items h6{font-size:.8em;}
+.add-us{width:100%;}
+.news-box-button,.news input{font-size: .8em;}
+#news-wrapper h3,#news-wrapper p{font-size: .8em;}
+.end-info h6{font-size:.9em;}
+.end-info p{font-size:.8em;}
+.header-date{font-size:1.2em;}
+#header-nav li{width: 10.7%;}
+#gameHeader li,#gameHeader li:last-child{font-size: .7em;}
+.console-header li,.console-header li:last-child{font-size: .7em;}
+#img-wrapper img{max-height:65px;}
+.add-us h2, .add-us p{font-size: .8em;}
+
+}
+
+@media screen and (max-width: 775px) {
+#gameHeader li,#gameHeader li:last-child{font-size: .5em;}
+.console-header li,.console-header li:last-child{font-size: .5em;}
+.four-items{width:48%;margin:1%;}
+.add-us h2, .add-us p{font-size: .7em;}
+#news-wrapper h3,#news-wrapper p{margin:0; font-size: .7em;}
+.news-box-button,.news input{font-size: .4em}
+.end-info h6{font-size:.8em;}
+.end-info p{font-size:.7em;}
+.add-us a{font-size:.7em;}
+#systems-nav a{font-size: .4em;}
+#img-wrapper img{max-height:50px;}
+}
+@media screen and (max-width: 558px) {
+#header-nav li:first-child{font-size:.3em;}
+#header-nav li{font-size: .3em;width:10.7%}
+#gameHeader li,.console-header li{width:15%;}
+#gameHeader li,#gameHeader li:last-child{font-size: .3em;padding:3% 0;}
+.console-header li,.console-header li:last-child{font-size: .3em;padding:3% 0;}
+.end-info{width:49%;}
+.end-info h6{margin-left:0; text-align: center;font-size: .5em;}
+.end-info p{text-align: center;margin-left:0;font-size: .3em;}
+.news-box-button,.news input{font-size: .2em}
+#system-nav-li{width: 24.7% font-size.4em}
+#systems-nav li{width:24.7%}
+#img-wrapper img{display:none;}
+
+.news input{width:55%;}
+}
+@media screen and (max-width: 430px) {
+#header-nav li{font-size: .3em;width:10.4%}
+#systems-nav li{width:24.4%;}
+.console-header li{width:20%;padding:5% 0;}
+.console-header li:last-child{width:15%;padding:5% 0;}
+#gameHeader li,#gameHeader li:last-child{font-size:.4em;}
+#gameHeader li:last-child{padding:4% 0;}
+#gameHeader li{padding:2% 0;}
+#systems-nav a{font-size: .3em;}
+
+}
+@media screen and (max-width: 410px) {
+.news input{width:50%;}
+}
